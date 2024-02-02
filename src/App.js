@@ -1,10 +1,12 @@
 import './App.css';
-import WebWorkers from './components/web-works';
+import WithWebWorkers from './components/with-web-worker';
+// import WithOutWebWorkers from './components/without-web-worker';
 
 function App() {
   return (
     <div>
-      <WebWorkers/>
+      {/* <WithOutWebWorkers/> */}
+      <WithWebWorkers/>
     </div>
   );
 }
