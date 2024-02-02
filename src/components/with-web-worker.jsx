@@ -1,8 +1,7 @@
 // WithWebWorkers.js
 import React, { useState } from "react";
-import MyWorker from "worker-loader!./worker.js"; // Import the worker using worker-loader
+const worker = new Worker(new URL('./worker.js', import.meta.url));
 
-const worker = new MyWorker();
 
 export default function WithWebWorkers() {
   const [count, setCount] = useState(0);
